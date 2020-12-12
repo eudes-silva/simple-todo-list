@@ -36,7 +36,7 @@ todoList.addEventListener("click", function(event) {
   event.target.addEventListener('click',(event)=>{
     let parent = event.target.parentElement;
     if (event.target.className === 'item-btn') {
-      parent.style.display='none'
+      parent.remove();
     }
    })
 });
