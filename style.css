@@ -1,0 +1,125 @@
+:root{
+  --main-color:#156064;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height:100vh;
+  width:100vw;
+  overflow: auto;
+  font-family: 'Roboto',sans-serif;
+}
+
+.container{
+  display:grid;
+  place-items:center;
+  height:100%;
+}
+
+.todo{
+  width:clamp(30%,500px,80%);
+  height:auto;
+}
+
+.todo-form-title{
+  color: var(--main-color);
+  display: inline-block;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.todo-form-description{
+  color:var(--main-color);
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 15px;
+}
+
+.insertItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  height:40px;
+  position: relative;
+}
+
+#newItemInput{
+  padding:5px 40px 5px 20px;
+  width:100%;
+  height:100%;
+  color:#fff;
+  border: 1px solid var(--main-color);
+  border: none;
+  border-radius:20px;
+  font-size: 1.2em;
+  background: radial-gradient(circle at 100% 20px, #fff 26.5px, var(--main-color) 26.5px);
+}
+
+.addNewItem{
+  width: 39px;
+  height:39px;
+  border:none;
+  border-radius:50%;
+  background-color: var(--main-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo-item{
+  border:1px solid var(--main-color);
+  border-radius:20px;
+  color: var(--main-color);
+  font-size: 1.2em;
+  list-style-type: none;
+  margin:10px 0;
+  padding:0px 20px;
+  height:clamp(auto,39px,auto);
+  line-height: 39px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.todo-item.done{
+  border:1px solid var(--main-color);
+  border-radius:20px;
+  color: var(--main-color);
+  font-size: 1.2em;
+  list-style-type: none;
+  margin:10px 0;
+  padding:0px 20px;
+  height:clamp(auto,39px,auto);
+  line-height: 39px;
+  vertical-align: middle;
+  text-decoration: line-through;
+  position: relative;
+}
+
+.todo-item:hover{
+  cursor: pointer;
+}
+
+.item-btn{
+  width: 38px;
+  height: 39px;
+  background-color:#fff;
+  border: 1px solid #156064;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: -0.6px;
+  top:0px;
+}
+
+.item-btn hr{
+  border:0.5px solid #156064;
+  color:#156064;
+  outline:none;
+  width:50%;
+  margin:0 auto;
+}

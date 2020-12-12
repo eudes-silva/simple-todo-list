@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Toomtodo - A simple todo tool</title>
+</head>
+<body>
+  <div class="container">
+    <div class="todo">
+      <form action="">
+        <h1 class="todo-form-title">Toomtodo</h1>
+        <p class="todo-form-description">A simple todo tool</p>
+        <div class="insertItem">
+          <input type="text" name="newItemInput" id="newItemInput" placeholder="Add a new task">
+          <label for="addNewItem"><input class="addNewItem" type="submit" name="addNewItem" value=""></label>
+        </div>
+      </form>
+      <ul class="todo-list"></ul>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
